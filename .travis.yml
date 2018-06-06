@@ -31,6 +31,7 @@ before_script:
      - sudo cp *.a /usr/lib
 
 script:
+     - cd -
      - mkdir -p build
      - cd build
      - cmake ../

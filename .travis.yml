@@ -28,6 +28,7 @@ script:
      - cd /usr/src/gtest
      - sudo cmake .
      - sudo make
+     - cd -
      - mkdir -p build
      - cd build
      - cmake ../

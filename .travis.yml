@@ -18,15 +18,11 @@ matrix:
            - gcc-4.8
            - g++-4.8
            - libgtest-dev
+           - cmake
+           - cmake-data
          sources: &precise_latest_boost_sources
            - ubuntu-toolchain-r-test
-addons:
-  apt:
-    sources:
-      - george-edison55-precise-backports # cmake 3.2.3 / doxygen 1.8.3
-    packages:
-      - cmake
-      - cmake-data
+           - george-edison55-precise-backports # cmake 3.2.3 / doxygen 1.8.3
 
 script:
      - cd /usr/src/gtest

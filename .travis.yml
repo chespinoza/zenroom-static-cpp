@@ -32,10 +32,7 @@ install:
       fi
 
 script:
-     - sudo cd /usr/src/gtest && cmake CMakeLists.txt && make
-    ############################################################################
-    # Build main and tests
-    ############################################################################
+     - cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make
      - mkdir -p build
      - cd build
      - cmake ../
